@@ -1,0 +1,90 @@
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #086c64;
+    color: white;
+    padding: 2em 1em 1em;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 0.5em;
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8em;
+    margin: 0.2em 0;
+}
+
+header p {
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+nav {
+    background-color: #086c64;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    padding: 1em 1.5em;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #064f48;
+}
+
+.hero {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+main {
+    padding: 3em 1em;
+    background: white;
+}
+
+.intro {
+    max-width: 700px;
+    margin: auto;
+}
+
+.intro h2 {
+    color: #086c64;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+footer {
+    background-color: #086c64;
+    color: white;
+    padding: 1em;
+}
