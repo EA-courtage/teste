@@ -1,1 +1,218 @@
+# Créer une page "À propos" dans un site structuré avec tous les éléments nécessaires
+
+# Définir le dossier du projet
+apropos_site_path = "/mnt/data/eac_site_apropos"
+os.makedirs(f"{apropos_site_path}/images", exist_ok=True)
+
+# HTML de la page à propos
+html_apropos = """
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>À propos - L’Europeo Africaine de Courtage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.jpg" type="image/jpeg">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <img src="images/banner.jpg" alt="Bannière" class="header-banner">
+        <div class="site-title">
+            <img src="images/logo.jpg" alt="Logo" class="logo">
+            <h1>L’EUROPEO AFRICAINE DE COURTAGE</h1>
+            <p>Votre partenaire de confiance en réassurance, basé en Algérie.</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="a-propos.html" class="active">À propos</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Pourquoi nous choisir</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="apropos-section">
+            <div class="texte">
+                <h2>À propos de notre compagnie</h2>
+                <p>
+                    L’Europeo Africaine de Courtage est une compagnie de courtage en réassurance basée exclusivement en Algérie.
+                    Nous accompagnons les entreprises locales dans leurs démarches d'assurance, en leur proposant des solutions adaptées à leurs risques.
+                    Grâce à notre expertise du marché et à notre réseau de partenaires, nous agissons comme un véritable pont entre l’assuré et les compagnies d’assurance.
+                </p>
+                <p>
+                    Notre mission est d’instaurer une relation de confiance, durable et humaine, avec les entreprises algériennes, en mettant en avant notre savoir-faire local
+                    et notre vision orientée vers la performance, l'écoute et l'intégrité.
+                </p>
+            </div>
+            <div class="profil">
+                <img src="images/avatar.JPG" alt="Directeur général">
+                <h3>Hafid Hachani</h3>
+                <p class="role">Directeur général</p>
+                <p class="bio">Fort de plus de 35 ans d’expérience dans le domaine de l’assurance, il incarne la vision et la stabilité de notre entreprise.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 L’Europeo Africaine de Courtage · Tous droits réservés</p>
+    </footer>
+</body>
+</html>
+"""
+
+# CSS commun
+css_apropos = """
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    background: #ffffff;
+    text-align: center;
+}
+
+.site-header {
+    background-color: #086c64;
+    color: white;
+}
+
+.header-banner {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.site-title {
+    padding: 1em 0;
+}
+
+.site-title img.logo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 0.5em;
+}
+
+.site-title h1 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0.2em 0;
+}
+
+.site-title p {
+    margin: 0;
+}
+
+nav {
+    background-color: #064f48;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a.active,
+nav a:hover {
+    background-color: #043e3a;
+}
+
+main {
+    padding: 3em 1em;
+}
+
+.apropos-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3em;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: auto;
+    text-align: left;
+}
+
+.apropos-section .texte {
+    flex: 1 1 300px;
+}
+
+.apropos-section h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #086c64;
+    font-size: 2em;
+}
+
+.apropos-section .profil {
+    flex: 1 1 250px;
+    text-align: center;
+}
+
+.profil img {
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.profil h3 {
+    margin-top: 1em;
+    font-family: 'Montserrat', sans-serif;
+    color: #086c64;
+}
+
+.role {
+    margin: 0.3em 0;
+    font-weight: bold;
+    color: #444;
+}
+
+.bio {
+    font-size: 0.95em;
+    color: #555;
+    padding: 0 1em;
+}
+
+footer {
+    background-color: #086c64;
+    color: white;
+    padding: 1em;
+}
+"""
+
+# Sauvegarder les fichiers
+Path(f"{apropos_site_path}/a-propos.html").write_text(html_apropos, encoding="utf-8")
+Path(f"{apropos_site_path}/style.css").write_text(css_apropos, encoding="utf-8")
+
+# Sauvegarder les images dans le dossier
+Image.open("/mnt/data/banner.jpg").convert("RGB").save(f"{apropos_site_path}/images/banner.jpg")
+Image.open("/mnt/data/logo.jpg").convert("RGB").save(f"{apropos_site_path}/images/logo.jpg")
+Image.open("/mnt/data/avatar.JPG").convert("RGB").save(f"{apropos_site_path}/images/avatar.JPG")
+
+# Générer l'archive ZIP
+apropos_final_zip = "/mnt/data/site_apropos_complete.zip"
+with zipfile.ZipFile(apropos_final_zip, 'w') as zipf:
+    for foldername, subfolders, filenames in os.walk(apropos_site_path):
+        for filename in filenames:
+            file_path = os.path.join(foldername, filename)
+            arcname = os.path.relpath(file_path, apropos_site_path)
+            zipf.write(file_path, arcname=arcname)
+
+apropos_final_zip
 
