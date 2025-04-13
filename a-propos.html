@@ -1,171 +1,56 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>À propos - L’Europeo Africaine de Courtage</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/logo.jpg" type="image/jpeg">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <title>À propos - L’Europeo Africaine de Courtage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="images/blanc.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <header class="site-header">
-        <div class="header-container">
-            <img src="images/logo.jpg" alt="Logo" class="logo">
-            <div class="title-block">
-                <h1>L’EUROPEO AFRICAINE DE COURTAGE</h1>
-                <p>Votre partenaire de confiance en réassurance, basé en Algérie.</p>
-            </div>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="a-propos.html" class="active">À propos</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Pourquoi nous choisir</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="site-header">
+    <div class="header-container">
+      <img src="images/blanc.png" alt="Logo" class="logo" />
+      <div class="title-block">
+        <h1>L’EUROPEO AFRICAINE DE COURTAGE</h1>
+        <p>Votre partenaire de confiance en réassurance, basé en Algérie.</p>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="a-propos.html" class="active">À propos</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Pourquoi nous choisir</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <section class="apropos">
-            <div class="content">
-                <h2>À propos</h2>
-                <p>Lancée en avril 2025, L’Europeo Africaine de Courtage est une entreprise de courtage en réassurance agréée par arrêté du Ministre des Finances en date du 16 janvier 2025.</p>
-                <p>Nos bureaux sont actifs dans toutes les branches de l’assurance, vie et non-vie.</p>
-                <p>
-                    <a class="btn-link" href="documents/JORA.pdf" target="_blank">
-                        📄 Cliquez ici pour accéder à l'arrêté du Ministre des Finances
-                    </a>
-                </p>
-                <img src="images/apropos.png" alt="Vue entreprise" class="apropos-img">
-            </div>
-        </section>
-    </main>
+  <main>
+    <section class="apropos-section">
+      <div class="apropos-container">
+        <h2>À propos</h2>
+        <p>
+          Lancée en avril 2025, L’Europeo Africaine de Courtage est une entreprise de courtage en réassurance agréée par arrêté du Ministre des Finances en date du 16 janvier 2025.
+        </p>
+        <p>
+          Nos bureaux sont actifs dans toutes les branches de l’assurance, vie et non-vie.
+        </p>
+        <p>
+          <a class="btn-link" href="documents/JORA.pdf" target="_blank">📄 Cliquez ici pour accéder à l'arrêté du Ministre des Finances</a>
+        </p>
+      </div>
+    </section>
+  </main>
 
-    <footer>
-        <p>&copy; 2025 L’Europeo Africaine de Courtage · Tous droits réservés</p>
-    </footer>
+  <div class="banniere-bas">
+    <img src="images/banner.jpg" alt="Bannière décorative" />
+  </div>
+
+  <footer>
+    <p>&copy; 2025 L’Europeo Africaine de Courtage · Tous droits réservés</p>
+  </footer>
 </body>
 </html>
-body {
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
-    background-color: #ffffff;
-    color: #333;
-}
-
-.site-header {
-    background-color: #086c64;
-    color: white;
-    padding: 1em;
-}
-
-.header-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1em;
-    flex-wrap: wrap;
-}
-
-.logo {
-    width: 70px;
-    height: auto;
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(255,255,255,0.5);
-}
-
-.title-block h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.8em;
-    margin: 0.2em 0;
-}
-
-.title-block p {
-    margin: 0;
-}
-
-nav {
-    background-color: #064f48;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
-}
-
-nav li {
-    margin: 0;
-}
-
-nav a {
-    display: block;
-    padding: 1em 1.5em;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav a:hover,
-nav a.active {
-    background-color: #043e3a;
-}
-
-main {
-    padding: 3em 1em;
-    background-color: #f7f9f9;
-}
-
-.apropos .content {
-    max-width: 850px;
-    margin: auto;
-    text-align: left;
-    background: white;
-    padding: 2em;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-}
-
-.apropos h2 {
-    font-family: 'Montserrat', sans-serif;
-    color: #086c64;
-    font-size: 2em;
-    margin-bottom: 0.5em;
-}
-
-.apropos p {
-    font-size: 1.1em;
-    line-height: 1.6;
-}
-
-.btn-link {
-    display: inline-block;
-    margin: 1.5em 0;
-    font-weight: bold;
-    color: #007BFF;
-    text-decoration: underline;
-    font-size: 1.1em;
-}
-
-.apropos-img {
-    width: 100%;
-    max-width: 800px;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    margin-top: 2em;
-}
-
-footer {
-    background-color: #086c64;
-    color: white;
-    text-align: center;
-    padding: 1.5em;
-}
-
