@@ -341,3 +341,44 @@ footer {
   color: #333;
   font-size: 1em;
 }
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f2fefc;
+}
+
+.site-header {
+  background-color: #086c64;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+.site-header .logo {
+  max-width: 80px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  list-style: none;
+  padding: 0;
+  margin-top: 1em;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav ul li a.active {
+  border-bottom: 2px solid #fff;
+}
+
+.contact-main {
+  background-image: url('images/skyline-5151765.jpg');
+  background-size: cover;
+  background-position: center;
