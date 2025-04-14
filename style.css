@@ -289,3 +289,55 @@ footer {
   margin-top: 2em;
 }
 
+.banner-why {
+  background-image: url("images/historical-buildings-morocco.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.banner-overlay {
+  background-color: rgba(8, 108, 100, 0.7);
+  color: white;
+  padding: 2em 3em;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.why-content {
+  background-color: #daf2ed;
+  padding: 3em 1em;
+}
+
+.why-section {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+}
+
+.why-block {
+  background-color: white;
+  padding: 1.5em;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.why-block h3 {
+  color: #086c64;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 0.5em;
+}
+
+.why-block p {
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  font-size: 1em;
+}
