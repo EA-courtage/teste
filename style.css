@@ -214,3 +214,78 @@ footer {
     color: white;
     padding: 1em;
 }
+.services-section {
+  background-color: #daf2ed;
+  padding: 4em 1.5em;
+}
+
+.services-container {
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+  background-color: white;
+  padding: 3em;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.section-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5em;
+  color: #086c64;
+  border-left: 5px solid #086c64;
+  padding-left: 15px;
+  text-align: left;
+  margin-bottom: 1em;
+}
+
+.intro-text {
+  font-size: 1.1em;
+  margin-bottom: 2.5em;
+  color: #333;
+}
+
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2em;
+}
+
+.service-item {
+  background: #f7f9f9;
+  padding: 2em;
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.service-item img {
+  width: 60px;
+  margin-bottom: 1em;
+}
+
+.service-item h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #086c64;
+  font-size: 1.3em;
+  margin-bottom: 0.5em;
+}
+
+.service-item p {
+  font-size: 1em;
+  color: #555;
+}
+
+.banniere-bas img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 2em;
+}
+
