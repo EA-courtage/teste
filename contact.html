@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Pourquoi nous choisir - L’Europeo Africaine de Courtage</title>
+  <title>Contact - L’Europeo Africaine de Courtage</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="images/blanc.png" type="image/png">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
@@ -10,7 +10,7 @@
     body {
       margin: 0;
       font-family: 'Open Sans', sans-serif;
-      background-color: #f9f9f9;
+      background-color: #f2fefc;
     }
 
     header {
@@ -22,20 +22,18 @@
 
     header img {
       width: 80px;
-      margin-bottom: 1em;
     }
 
     nav ul {
-      list-style: none;
-      padding: 0;
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
-      gap: 1.2em;
+      padding: 0;
+      list-style: none;
       margin-top: 1em;
+      gap: 1.5em;
     }
 
-    nav ul li a {
+    nav a {
       color: white;
       text-decoration: none;
       font-weight: bold;
@@ -43,62 +41,98 @@
       padding-bottom: 4px;
     }
 
-    nav ul li a.active,
-    nav ul li a:hover {
+    nav a.active,
+    nav a:hover {
       border-color: white;
     }
 
-    .banner-section {
-      background-color: #086c64;
-      color: white;
-      padding: 2em 1em;
-      text-align: center;
-    }
-
-    .banner-section h2 {
-      font-family: 'Montserrat', sans-serif;
-      margin: 0;
-      font-size: 2em;
-    }
-
-    main {
-      background-color: #daf2ed;
+    .background-section {
+      background-image: url("images/skyline-5151765.jpg");
+      background-size: cover;
+      background-position: center;
       padding: 3em 1em;
     }
 
-    .grid {
+    .main-content {
       max-width: 1100px;
-      margin: auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2em;
+      margin: 0 auto;
     }
 
-    .why-card {
-      background-color: white;
-      border-radius: 12px;
-      padding: 1.5em;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-      transition: transform 0.3s ease;
+    .section-card {
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      padding: 2em;
+      margin-bottom: 2em;
     }
 
-    .why-card:hover {
-      transform: translateY(-5px);
-    }
-
-    .why-card h3 {
-      color: #086c64;
+    .section-title {
+      background-color: #086c64;
+      color: white;
       font-family: 'Montserrat', sans-serif;
-      margin-top: 0;
-      margin-bottom: 0.6em;
+      font-size: 1.4em;
+      margin: -2em -2em 1.5em -2em;
+      padding: 0.8em 1em;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
     }
 
-    .why-card p {
+    .contact-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2em;
+      justify-content: space-between;
+    }
+
+    .contact-info,
+    .contact-map {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .contact-info p {
+      line-height: 1.7;
+      margin-bottom: 1em;
+    }
+
+    .contact-map iframe {
+      width: 100%;
+      height: 230px;
+      border: none;
+      border-radius: 10px;
+    }
+
+    .directeur-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2em;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .directeur-photo img {
+      width: 100%;
+      max-width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .directeur-info {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .directeur-info h3 {
+      margin-bottom: 0.5em;
+      font-family: 'Montserrat', sans-serif;
+      color: #086c64;
+    }
+
+    .directeur-info p {
       line-height: 1.6;
-      color: #333;
     }
 
-    .banniere-bas img {
+    .banner-bottom img {
       width: 100%;
       display: block;
       margin-top: 2em;
@@ -108,80 +142,68 @@
       background-color: #064f48;
       color: white;
       text-align: center;
-      padding: 1.5em 1em;
+      padding: 1.2em 1em;
       font-size: 0.95em;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.4em;
-      }
-
-      .banner-section h2 {
-        font-size: 1.5em;
-      }
     }
   </style>
 </head>
 <body>
 
-  <!-- Header -->
   <header>
     <img src="images/blanc.png" alt="Logo de L'Europeo Africaine">
     <h1>L’EUROPEO AFRICAINE DE COURTAGE</h1>
-    <p>Votre partenaire de confiance en réassurance, basé en Algérie</p>
+    <p>Votre partenaire de confiance en réassurance, basé en Algérie.</p>
     <nav>
       <ul>
         <li><a href="index.html">Accueil</a></li>
         <li><a href="a-propos.html">À propos</a></li>
         <li><a href="services.html">Services</a></li>
-        <li><a href="pourquoi.html" class="active">Pourquoi nous choisir</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="pourquoi.html">Pourquoi nous choisir</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Bannière Titre -->
-  <section class="banner-section">
-    <h2>Pourquoi nous choisir</h2>
-  </section>
+  <div class="background-section">
+    <div class="main-content">
 
-  <!-- Contenu -->
-  <main>
-    <div class="grid">
-      <div class="why-card">
-        <h3>📍 Expertise locale et internationale</h3>
-        <p>Plus de 35 ans d’expérience cumulée dans la réassurance, avec une parfaite connaissance du marché algérien.</p>
-      </div>
-      <div class="why-card">
-        <h3>✅ Agrément officiel</h3>
-        <p>Société agréée par arrêté du Ministre des Finances, active dans toutes les branches vie et non-vie.</p>
-      </div>
-      <div class="why-card">
-        <h3>🤝 Approche humaine et personnalisée</h3>
-        <p>Notre relation client est basée sur l’écoute, la confiance et la réactivité.</p>
-      </div>
-      <div class="why-card">
-        <h3>🧭 Indépendance</h3>
-        <p>Nous ne dépendons d’aucune compagnie d’assurance, garantissant un conseil impartial.</p>
-      </div>
-      <div class="why-card">
-        <h3>⚡ Réactivité et transparence</h3>
-        <p>Nous garantissons un accompagnement clair, rapide et fiable à chaque étape.</p>
-      </div>
-      <div class="why-card">
-        <h3>🌐 Un réseau de partenaires solide</h3>
-        <p>Collaboration avec des acteurs fiables en Algérie et à l’international.</p>
-      </div>
+      <!-- Section Contact -->
+      <section class="section-card">
+        <div class="section-title">Nous contacter</div>
+        <div class="contact-row">
+          <div class="contact-info">
+            <p><strong>Siège :</strong><br>Sidi Youcef, Coop KAHINA, N°330<br>Béni Messous, Alger, Algérie</p>
+            <p><strong>GSM :</strong><br>(0)5 42 86 37 96</p>
+            <p><strong>Email :</strong><br>contact@eacourtagedz.com</p>
+          </div>
+          <div class="contact-map">
+            <iframe src="https://www.google.com/maps?q=36.79059,2.974452&z=16&output=embed" allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Directeur -->
+      <section class="section-card">
+        <div class="section-title">Directeur Général</div>
+        <div class="directeur-row">
+          <div class="directeur-photo">
+            <img src="images/pic03_cropped.JPG" alt="Photo de M. Hafid Hachani">
+          </div>
+          <div class="directeur-info">
+            <h3>Hafid Hachani</h3>
+            <p>Avec plus de 35 ans d’expérience dans le secteur de l’assurance, M. Hachani incarne les valeurs de rigueur, d’intégrité et d’engagement envers les entreprises algériennes. Il assure la direction de L’Europeo Africaine avec une vision claire et humaine du courtage en réassurance.</p>
+          </div>
+        </div>
+      </section>
+
     </div>
-  </main>
-
-  <!-- Bannière décorative -->
-  <div class="banniere-bas">
-    <img src="images/banner.jpg" alt="Bannière bas de page">
   </div>
 
-  <!-- Footer -->
+  <!-- Bannière bas de page -->
+  <div class="banner-bottom">
+    <img src="images/banner.jpg" alt="Bannière décorative">
+  </div>
+
   <footer>
     <p>&copy; 2025 L’Europeo Africaine de Courtage · Tous droits réservés</p>
   </footer>
