@@ -13,26 +13,30 @@
       background-color: #f9f9f9;
     }
 
-    header {
+    .site-header {
       background-color: #086c64;
       color: white;
+      padding: 2em 1em 1em;
       text-align: center;
-      padding: 1.5em 1em;
     }
 
-    header img {
+    .site-header .logo {
       width: 80px;
       margin-bottom: 1em;
     }
 
+    nav {
+      background-color: #064f48;
+    }
+
     nav ul {
       list-style: none;
-      padding: 0;
+      padding: 1em;
+      margin: 0;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 1.2em;
-      margin-top: 1em;
     }
 
     nav ul li a {
@@ -40,7 +44,7 @@
       text-decoration: none;
       font-weight: bold;
       border-bottom: 2px solid transparent;
-      padding-bottom: 4px;
+      padding-bottom: 3px;
     }
 
     nav ul li a.active,
@@ -98,11 +102,12 @@
       border-radius: 10px;
     }
 
+    /* Directeur : fond vert clair, texte gauche, image droite */
     .directeur-section {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      background: white;
+      background: #daf2ed;
       border-radius: 15px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.05);
       padding: 2em;
@@ -110,11 +115,9 @@
       gap: 2em;
     }
 
-    .directeur-photo img {
-      width: 100%;
-      max-width: 280px;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    .directeur-info {
+      flex: 1;
+      min-width: 280px;
     }
 
     .directeur-info h3 {
@@ -126,6 +129,14 @@
     .directeur-info p {
       line-height: 1.6;
       margin: 0.5em 0;
+      color: #333;
+    }
+
+    .directeur-photo img {
+      width: 100%;
+      max-width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
 
     .banniere-bas img {
@@ -151,26 +162,36 @@
       .banner-section h2 {
         font-size: 1.5em;
       }
+
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .directeur-info {
+        text-align: center;
+      }
     }
   </style>
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
-    <img src="images/blanc.png" alt="Logo de L'Europeo Africaine">
+  <!-- En-tête identique accueil -->
+  <header class="site-header">
+    <img src="images/blanc.png" alt="Logo" class="logo">
     <h1>L’EUROPEO AFRICAINE DE COURTAGE</h1>
     <p>Votre partenaire de confiance en réassurance, basé en Algérie</p>
-    <nav>
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="a-propos.html">À propos</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="pourquoi.html">Pourquoi nous choisir</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-      </ul>
-    </nav>
   </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="a-propos.html">À propos</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="pourquoi.html">Pourquoi nous choisir</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
 
   <!-- Titre de section -->
   <section class="banner-section">
@@ -192,15 +213,15 @@
       </div>
     </div>
 
-    <!-- Bloc directeur -->
+    <!-- Bloc directeur amélioré -->
     <div class="directeur-section">
-      <div class="directeur-photo">
-        <img src="images/pic03_cropped.JPG" alt="Photo du Directeur Général">
-      </div>
       <div class="directeur-info">
         <h3>Hafid Hachani</h3>
-        <p>Directeur Général</p>
+        <p><strong>Directeur Général</strong></p>
         <p>Avec plus de 35 ans d’expérience dans le secteur de l’assurance, M. Hachani incarne les valeurs de rigueur, d’intégrité et d’engagement envers les entreprises algériennes.</p>
+      </div>
+      <div class="directeur-photo">
+        <img src="images/pic03_cropped.JPG" alt="Photo du Directeur Général">
       </div>
     </div>
 
