@@ -1,78 +1,271 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <title>À propos - L’Europeo Africaine de Courtage</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="images/blanc.png" type="image/png" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet" />
-</head>
-<body>
 
-  <!-- Header -->
-  <header class="site-header">
-    <div class="header-container">
-      <img src="images/blanc.png" alt="Logo" class="logo" />
-      <div class="title-block">
-        <h1>L’EUROPEO AFRICAINE DE COURTAGE</h1>
-        <p>Votre partenaire de confiance en réassurance, basé en Algérie.</p>
-      </div>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="a-propos.html">À propos</a></li>
-        <li><a href="Services.html">Services</a></li>
-        <li><a href="pourquoi.html">Pourquoi nous choisir</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- Titre section -->
-  <section class="banner-section">
-    <h2>Contactez-nous</h2>
-  </section>
-
-  <main>
-
-    <!-- Coordonnées + carte -->
-    <div class="contact-grid">
-      <div class="contact-info">
-        <h3>Coordonnées</h3>
-        <p><strong>Siège :</strong><br>Sidi Youcef, Coop KAHINA, N°330<br>Béni Messous, Alger, Algérie</p>
-        <p><strong>GSM :</strong><br>(0)5 42 86 37 96</p>
-        <p><strong>Email :</strong><br>contact@eacourtagedz.com</p>
-      </div>
-      <div class="contact-map">
-        <iframe src="https://www.google.com/maps?q=36.79059,2.974452&z=16&output=embed" allowfullscreen></iframe>
-      </div>
-    </div>
-
-    <!-- Directeur -->
-    <div class="directeur-section">
-      <div class="directeur-info">
-        <h3>Hafid Hachani</h3>
-        <p><strong>Directeur Général</strong></p>
-        <p>Avec plus de 35 ans d’expérience dans le secteur de l’assurance, M. Hachani incarne les valeurs de rigueur, d’intégrité et d’engagement envers les entreprises algériennes.</p>
-      </div>
-      <div class="directeur-photo">
-        <img src="images/pic03_cropped.JPG" alt="Photo du Directeur Général">
-      </div>
-    </div>
-
-  </main>
-
-  <!-- Bannière bas -->
-  <div class="banniere-bas">
-    <img src="images/banner.jpg" alt="Bannière décorative">
-  </div>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 L’Europeo Africaine de Courtage · Tous droits réservés</p>
-  </footer>
-
-</body>
-</html>
+ <!DOCTYPE html>
+ <html lang="fr">
+ <head>
+   <meta charset="UTF-8">
+   <title>Contact - L’Europeo Africaine de Courtage</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="images/blanc.png" type="image/png">
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+   <style>
+     body {
+       margin: 0;
+       font-family: 'Open Sans', sans-serif;
+       background-color: #f9f9f9;
+     }
+ 
+     header {
+     .site-header {
+       background-color: #086c64;
+       color: white;
+       padding: 2em 1em 1em;
+       text-align: center;
+       padding: 1.5em 1em;
+     }
+ 
+     header img {
+     .site-header .logo {
+       width: 80px;
+       margin-bottom: 1em;
+     }
+ 
+     nav {
+       background-color: #064f48;
+     }
+ 
+     nav ul {
+       list-style: none;
+       padding: 0;
+       padding: 1em;
+       margin: 0;
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       gap: 1.2em;
+       margin-top: 1em;
+     }
+ 
+     nav ul li a {
+       color: white;
+       text-decoration: none;
+       font-weight: bold;
+       border-bottom: 2px solid transparent;
+       padding-bottom: 4px;
+       padding-bottom: 3px;
+     }
+ 
+     nav ul li a.active,
+     nav ul li a:hover {
+       border-color: white;
+     }
+ 
+     .banner-section {
+       background-color: #086c64;
+       color: white;
+       padding: 2em 1em;
+       text-align: center;
+     }
+ 
+     .banner-section h2 {
+       font-family: 'Montserrat', sans-serif;
+       margin: 0;
+       font-size: 2em;
+     }
+ 
+     main {
+       max-width: 1100px;
+       margin: auto;
+       padding: 3em 1em;
+     }
+ 
+     .contact-grid {
+       display: flex;
+       flex-wrap: wrap;
+       gap: 2em;
+       background: #daf2ed;
+       padding: 2em;
+       border-radius: 15px;
+     }
+ 
+     .contact-info, .contact-map {
+       flex: 1;
+       min-width: 300px;
+     }
+ 
+     .contact-info h3 {
+       font-family: 'Montserrat', sans-serif;
+       color: #086c64;
+     }
+ 
+     .contact-info p {
+       line-height: 1.7;
+       margin: 0.5em 0;
+     }
+ 
+     .contact-map iframe {
+       width: 100%;
+       height: 250px;
+       border: none;
+       border-radius: 10px;
+     }
+ 
+     /* Directeur : fond vert clair, texte gauche, image droite */
+     .directeur-section {
+       display: flex;
+       flex-wrap: wrap;
+       align-items: center;
+       background: white;
+       background: #daf2ed;
+       border-radius: 15px;
+       box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+       padding: 2em;
+       margin-top: 2em;
+       gap: 2em;
+     }
+ 
+     .directeur-photo img {
+       width: 100%;
+       max-width: 280px;
+       border-radius: 12px;
+       box-shadow: 0 0 10px rgba(0,0,0,0.1);
+     .directeur-info {
+       flex: 1;
+       min-width: 280px;
+     }
+ 
+     .directeur-info h3 {
+       font-family: 'Montserrat', sans-serif;
+       color: #086c64;
+       margin-top: 0;
+     }
+ 
+     .directeur-info p {
+       line-height: 1.6;
+       margin: 0.5em 0;
+       color: #333;
+     }
+ 
+     .directeur-photo img {
+       width: 100%;
+       max-width: 280px;
+       border-radius: 12px;
+       box-shadow: 0 0 10px rgba(0,0,0,0.1);
+     }
+ 
+     .banniere-bas img {
+       width: 100%;
+       display: block;
+       margin-top: 3em;
+     }
+ 
+     footer {
+       background-color: #064f48;
+       color: white;
+       text-align: center;
+       padding: 1.5em 1em;
+       font-size: 0.95em;
+     }
+ 
+     @media (max-width: 700px) {
+       .contact-grid,
+       .directeur-section {
+         flex-direction: column;
+       }
+ 
+       .banner-section h2 {
+         font-size: 1.5em;
+       }
+ 
+       nav ul {
+         flex-direction: column;
+         align-items: center;
+       }
+ 
+       .directeur-info {
+         text-align: center;
+       }
+     }
+   </style>
+ </head>
+ <body>
+ 
+   <!-- Header -->
+   <header>
+     <img src="images/blanc.png" alt="Logo de L'Europeo Africaine">
+   <!-- En-tête identique accueil -->
+   <header class="site-header">
+     <img src="images/blanc.png" alt="Logo" class="logo">
+     <h1>L’EUROPEO AFRICAINE DE COURTAGE</h1>
+     <p>Votre partenaire de confiance en réassurance, basé en Algérie</p>
+     <nav>
+       <ul>
+         <li><a href="index.html">Accueil</a></li>
+         <li><a href="a-propos.html">À propos</a></li>
+         <li><a href="services.html">Services</a></li>
+         <li><a href="pourquoi.html">Pourquoi nous choisir</a></li>
+         <li><a href="contact.html" class="active">Contact</a></li>
+       </ul>
+     </nav>
+   </header>
+ 
+   <nav>
+     <ul>
+       <li><a href="index.html">Accueil</a></li>
+       <li><a href="a-propos.html">À propos</a></li>
+       <li><a href="services.html">Services</a></li>
+       <li><a href="pourquoi.html">Pourquoi nous choisir</a></li>
+       <li><a href="contact.html" class="active">Contact</a></li>
+     </ul>
+   </nav>
+ 
+   <!-- Titre de section -->
+   <section class="banner-section">
+     <h2>Contactez-nous</h2>
+   </section>
+ 
+   <main>
+ 
+     <!-- Bloc coordonnées + carte -->
+     <div class="contact-grid">
+       <div class="contact-info">
+         <h3>Coordonnées</h3>
+         <p><strong>Siège :</strong><br>Sidi Youcef, Coop KAHINA, N°330<br>Béni Messous, Alger, Algérie</p>
+         <p><strong>GSM :</strong><br>(0)5 42 86 37 96</p>
+         <p><strong>Email :</strong><br>contact@eacourtagedz.com</p>
+       </div>
+       <div class="contact-map">
+         <iframe src="https://www.google.com/maps?q=36.79059,2.974452&z=16&output=embed" allowfullscreen></iframe>
+       </div>
+     </div>
+ 
+     <!-- Bloc directeur -->
+     <!-- Bloc directeur amélioré -->
+     <div class="directeur-section">
+       <div class="directeur-photo">
+         <img src="images/pic03_cropped.JPG" alt="Photo du Directeur Général">
+       </div>
+       <div class="directeur-info">
+         <h3>Hafid Hachani</h3>
+         <p>Directeur Général</p>
+         <p><strong>Directeur Général</strong></p>
+         <p>Avec plus de 35 ans d’expérience dans le secteur de l’assurance, M. Hachani incarne les valeurs de rigueur, d’intégrité et d’engagement envers les entreprises algériennes.</p>
+       </div>
+       <div class="directeur-photo">
+         <img src="images/pic03_cropped.JPG" alt="Photo du Directeur Général">
+       </div>
+     </div>
+ 
+   </main>
+ 
+   <!-- Bannière bas -->
+   <div class="banniere-bas">
+     <img src="images/banner.jpg" alt="Bannière décorative">
+   </div>
+ 
+   <!-- Footer -->
+   <footer>
+     <p>&copy; 2025 L’Europeo Africaine de Courtage · Tous droits réservés</p>
+   </footer>
+ 
+ </body>
+ </html>
