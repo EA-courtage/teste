@@ -138,6 +138,75 @@
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
 
+    .contact-form-section {
+      background-color: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 3px 15px rgba(0,0,0,0.05);
+      padding: 2.5em;
+      margin-top: 3em;
+    }
+
+    .contact-form-section h3 {
+      font-family: 'Montserrat', sans-serif;
+      color: #086c64;
+      text-align: center;
+      font-size: 1.6em;
+      margin-bottom: 1.5em;
+    }
+
+    .form-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2em;
+    }
+
+    .form-group {
+      flex: 1;
+      min-width: 250px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-group label {
+      font-weight: bold;
+      color: #064f48;
+      margin-bottom: 0.5em;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      padding: 0.9em;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1em;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    .form-submit {
+      margin-top: 2em;
+      text-align: center;
+    }
+
+    .form-submit button {
+      background-color: #086c64;
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+      padding: 0.9em 2em;
+      border: none;
+      border-radius: 10px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .form-submit button:hover {
+      background-color: #064f48;
+    }
+
     .banniere-bas img {
       width: 100%;
       display: block;
@@ -154,17 +223,18 @@
 
     @media (max-width: 700px) {
       .contact-grid,
-      .directeur-section {
+      .directeur-section,
+      .form-row {
         flex-direction: column;
-      }
-
-      .banner-section h2 {
-        font-size: 1.5em;
       }
 
       nav ul {
         flex-direction: column;
         align-items: center;
+      }
+
+      .banner-section h2 {
+        font-size: 1.5em;
       }
 
       .directeur-info {
@@ -193,14 +263,14 @@
     </ul>
   </nav>
 
-  <!-- Titre de la page -->
+  <!-- Titre de section -->
   <section class="banner-section">
     <h2>Contactez-nous</h2>
   </section>
 
   <main>
 
-    <!-- Coordonnées + Carte -->
+    <!-- Bloc coordonnées + carte -->
     <div class="contact-grid">
       <div class="contact-info">
         <h3>Coordonnées</h3>
@@ -213,7 +283,7 @@
       </div>
     </div>
 
-    <!-- Bloc Directeur -->
+    <!-- Bloc directeur -->
     <div class="directeur-section">
       <div class="directeur-info">
         <h3>Hafid Hachani</h3>
@@ -225,30 +295,38 @@
       </div>
     </div>
 
-  </main><!-- Formulaire de contact -->
-<div class="contact-form">
-  <h3>Envoyez-nous un message</h3>
-  <form action="mailto:a.hachani@laposte.net" method="POST" enctype="text/plain">
-    <label for="nom">Nom :</label>
-    <input type="text" id="nom" name="Nom" required>
+    <!-- Formulaire -->
+    <section class="contact-form-section">
+      <h3>Formulaire de contact</h3>
+      <form action="mailto:a.hachani@laposte.net" method="POST" enctype="text/plain">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="Nom" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="Email" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="Message" rows="5" required></textarea>
+        </div>
+        <div class="form-submit">
+          <button type="submit">Envoyer</button>
+        </div>
+      </form>
+    </section>
 
-    <label for="email">Email :</label>
-    <input type="email" id="email" name="Email" required>
+  </main>
 
-    <label for="message">Message :</label>
-    <textarea id="message" name="Message" rows="5" required></textarea>
-
-    <button type="submit">Envoyer</button>
-  </form>
-</div>
-
-
-  <!-- Bannière décorative -->
+  <!-- Bannière bas -->
   <div class="banniere-bas">
     <img src="images/banner.jpg" alt="Bannière décorative">
   </div>
 
-  <!-- Pied de page -->
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 L’Europeo Africaine de Courtage · Tous droits réservés</p>
   </footer>
