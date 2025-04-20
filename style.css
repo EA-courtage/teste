@@ -382,3 +382,52 @@ nav ul li a.active {
   background-image: url('images/skyline-5151765.jpg');
   background-size: cover;
   background-position: center;
+
+.contact-form {
+  margin-top: 3em;
+  background-color: #ffffff;
+  padding: 2em;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.contact-form h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #086c64;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.contact-form label {
+  font-weight: bold;
+  color: #064f48;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.8em;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.contact-form button {
+  background-color: #086c64;
+  color: white;
+  border: none;
+  padding: 0.8em;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #064f48;
+}
