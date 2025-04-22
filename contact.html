@@ -13,16 +13,40 @@
       background-color: #f9f9f9;
     }
 
+    /* En-tête avec bannière */
     .site-header {
-      background-color: #086c64;
+      background: url('images/banner.jpg') center/cover no-repeat;
       color: white;
-      padding: 2em 1em 1em;
       text-align: center;
+      padding: 3em 1em 2em;
+      position: relative;
     }
 
-    .site-header .logo {
+    .site-header::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(8, 108, 100, 0.7);
+    }
+
+    .header-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .logo {
       width: 80px;
       margin-bottom: 1em;
+    }
+
+    .site-header h1 {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      font-size: 1.8em;
+    }
+
+    .site-header p {
+      margin: 0.5em 0 0;
     }
 
     nav {
@@ -245,11 +269,13 @@
 </head>
 <body>
 
-  <!-- En-tête -->
+  <!-- En-tête avec bannière -->
   <header class="site-header">
-    <img src="images/blanc.png" alt="Logo" class="logo">
-    <h1>L’EUROPEO AFRICAINE DE COURTAGE</h1>
-    <p>Votre partenaire de confiance en réassurance, basé en Algérie</p>
+    <div class="header-content">
+      <img src="images/blanc.png" alt="Logo" class="logo">
+      <h1>L’EUROPEO AFRICAINE DE COURTAGE</h1>
+      <p>Votre partenaire de confiance en réassurance, basé en Algérie</p>
+    </div>
   </header>
 
   <!-- Navigation -->
@@ -269,7 +295,6 @@
   </section>
 
   <main>
-
     <!-- Coordonnées + carte -->
     <div class="contact-grid">
       <div class="contact-info">
@@ -333,3 +358,4 @@
 
 </body>
 </html>
+
