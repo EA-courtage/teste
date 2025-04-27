@@ -4,12 +4,15 @@
   <meta charset="UTF-8">
   <title>Contact - L’Europeo Africaine de Courtage</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="images/blanc.png" type="image/png">
+  <link rel="icon" href="images/logo.png" type="image/png">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
   <style>
     body { margin:0; font-family:'Open Sans',sans-serif; background:#f9f9f9; }
-    .site-header { background:#086c64; color:white; text-align:center; padding:2em 1em 1em; }
-    .site-header .logo { width:80px; margin-bottom:1em; }
+    .site-header { background:#086c64; color:white; padding:1.5em 1em; }
+    .header-container { max-width:1100px; margin:auto; display:flex; align-items:center; gap:1.5em; flex-wrap:wrap; justify-content:center; }
+    .logo { width:80px; }
+    .header-text h1 { margin:0; font-family:'Montserrat',sans-serif; font-size:1.8em; }
+    .header-text p { margin:0.5em 0 0; }
     nav { background:#064f48; }
     nav ul { list-style:none; padding:1em; margin:0; display:flex; flex-wrap:wrap; justify-content:center; gap:1.2em; }
     nav ul li a { color:white; text-decoration:none; font-weight:bold; border-bottom:2px solid transparent; padding-bottom:3px; }
@@ -38,27 +41,28 @@
     .form-submit button:hover { background:#064f48; }
     .banniere-bas img { width:100%; display:block; margin-top:3em; }
     footer { background:#064f48; color:white; text-align:center; padding:1.5em 1em; font-size:0.95em; }
-    @media (max-width:700px) { .contact-grid, .directeur-section, .form-row { flex-direction:column; } nav ul { flex-direction:column; align-items:center; } .banner-section h2 { font-size:1.5em; } .directeur-info { text-align:center; } }
+    @media (max-width:700px) { .header-container{flex-direction:column;text-align:center;} .contact-grid, .directeur-section, .form-row { flex-direction:column; } nav ul { flex-direction:column; align-items:center; } .banner-section h2 { font-size:1.5em; } .directeur-info { text-align:center; } }
   </style>
 </head>
 <body>
 
- <header class="site-header">
-  <div class="header-container">
-    <img src="images/Logo géométrique minimaliste en dégradé.png" alt="Logo" class="logo">
-    <div class="header-text">
-      <h1>L’EUROPEO AFRICAINE DE COURTAGE</h1>
-      <p>Votre partenaire de confiance en réassurance, basé en Algérie</p>
+  <!-- En-tête avec logo à gauche et texte à droite -->
+  <header class="site-header">
+    <div class="header-container">
+      <img src="images/logo.png" alt="Logo" class="logo">
+      <div class="header-text">
+        <h1>L’EUROPEO AFRICAINE DE COURTAGE</h1>
+        <p>Votre partenaire de confiance en réassurance, basé en Algérie</p>
+      </div>
     </div>
-  </div>
-</header>
+  </header>
 
   <!-- Navigation -->
   <nav>
     <ul>
       <li><a href="index.html">Accueil</a></li>
       <li><a href="a-propos.html">À propos</a></li>
-      <li><a href="Services.html">Services</a></li>
+      <li><a href="services.html">Services</a></li>
       <li><a href="pourquoi.html">Pourquoi nous choisir</a></li>
       <li><a href="contact.html" class="active">Contact</a></li>
     </ul>
@@ -69,9 +73,8 @@
     <h2>Contactez-nous</h2>
   </section>
 
-  <!-- (Reste inchangé) -->
+  <!-- Contenu inchangé -->
   <main>
-    <!-- Coordonnées + carte -->
     <div class="contact-grid">
       <div class="contact-info">
         <h3>Coordonnées</h3>
@@ -84,7 +87,6 @@
       </div>
     </div>
 
-    <!-- Directeur -->
     <div class="directeur-section">
       <div class="directeur-info">
         <h3>Hafid Hachani</h3>
@@ -96,7 +98,6 @@
       </div>
     </div>
 
-    <!-- Formulaire -->
     <section class="contact-form-section">
       <h3>Formulaire de contact</h3>
       <form action="https://formsubmit.co/a.hachani@laposte.net" method="POST">
@@ -119,15 +120,12 @@
         </div>
       </form>
     </section>
-
   </main>
 
-  <!-- Bannière bas -->
   <div class="banniere-bas">
     <img src="images/banner.jpg" alt="Bannière décorative">
   </div>
 
-  <!-- Footer -->
   <footer>
     <p>&copy; 2025 L’Europeo Africaine de Courtage · Tous droits réservés</p>
   </footer>
