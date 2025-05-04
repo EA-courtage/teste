@@ -303,4 +303,3 @@ with open(css_path, "w") as f:
     f.write(css_content)
 
 css_path
-
