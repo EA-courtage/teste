@@ -1,3 +1,5 @@
+# Créons un fichier style.css avec le contenu CSS global cohérent pour toutes les pages du site
+css_content = """
 /* =============== GLOBAL =============== */
 body {
   margin: 0;
@@ -293,5 +295,12 @@ footer {
     text-align: center;
   }
 }
-}
+"""
+
+# Écriture dans un fichier CSS
+css_path = "/mnt/data/style.css"
+with open(css_path, "w") as f:
+    f.write(css_content)
+
+css_path
 
