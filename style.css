@@ -1,313 +1,105 @@
-
-body {
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
-    background-color: #ffffff;
-    color: #333;
-    text-align: center;
-}
-
-header {
-    background-color: #086c64;
-    color: white;
-    padding: 2em 1em 1em;
-}
-
-.logo {
-    width: 80px;
-    height: auto;
-    margin-bottom: 0.5em;
-}
+/* =============== GLOBAL =============== */
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
-  background-color: #ffffff;
-  color: #333;
+  background-color: #f9f9f9;
 }
 
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* =============== HEADER =============== */
 .site-header {
   background-color: #086c64;
   color: white;
-  padding: 1em;
+  padding: 2em 1em 1em;
 }
 
 .header-container {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 1em;
-  flex-wrap: wrap;
+  gap: 1.5em;
+  text-align: left;
 }
 
 .logo {
-  width: 70px;
-  height: auto;
+  width: 80px;
 }
 
 .title-block h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.8em;
-  margin: 0.2em 0;
+  margin: 0.2em 0 0.3em;
+  font-size: 1.6em;
 }
 
 .title-block p {
   margin: 0;
+  font-size: 1em;
 }
 
+/* =============== NAVIGATION =============== */
 nav {
   background-color: #064f48;
 }
 
 nav ul {
   list-style: none;
+  padding: 1em;
+  margin: 0;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  padding: 0;
-  margin: 0;
+  justify-content: center;
+  gap: 1.2em;
 }
 
-nav li {
-  margin: 0;
-}
-
-nav a {
-  display: block;
-  padding: 1em 1.5em;
+nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 3px;
 }
 
-nav a.active,
-nav a:hover {
-  background-color: #043e3a;
+nav ul li a.active,
+nav ul li a:hover {
+  border-color: white;
 }
 
-.apropos-section {
-  background-color: #daf2ed;
-  padding: 4em 1.5em;
-}
-
-.apropos-container {
-  max-width: 800px;
-  margin: auto;
-  background: white;
-  padding: 2em;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  text-align: left;
-}
-
-.apropos-container h2 {
-  font-family: 'Montserrat', sans-serif;
-  color: #086c64;
-  font-size: 2.5em;
-  margin-bottom: 1em;
-  border-left: 5px solid #086c64;
-  padding-left: 10px;
-}
-
-.apropos-container p {
-  font-size: 1.1em;
-  line-height: 1.6;
-  margin-bottom: 1em;
-}
-
-.btn-link {
-  display: inline-block;
-  font-weight: bold;
-  color: #007BFF;
-  text-decoration: underline;
-  font-size: 1.1em;
-  margin-top: 1em;
-}
-
-.banniere-bas {
-  margin-top: 1em;
-  text-align: center;
-  background-color: #f7f9f9;
-}
-
-.banniere-bas img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-footer {
+/* =============== BANNIÈRE TITRE =============== */
+.banner-section,
+.banner-why {
   background-color: #086c64;
   color: white;
+  padding: 2em 1em;
   text-align: center;
-  padding: 1.5em;
-}
-
-header h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.8em;
-    margin: 0.2em 0;
-}
-
-header p {
-    font-size: 1em;
-    margin-bottom: 1em;
-}
-
-nav {
-    background-color: #086c64;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-nav li {
-    margin: 0;
-}
-
-nav a {
-    display: block;
-    padding: 1em 1.5em;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav a:hover,
-nav a.active {
-    background-color: #064f48;
-}
-
-.hero {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-main {
-    padding: 3em 1em;
-    background: white;
-}
-
-.intro {
-    max-width: 700px;
-    margin: auto;
-}
-
-.intro h2 {
-    color: #086c64;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2em;
-    margin-bottom: 0.5em;
-}
-
-footer {
-    background-color: #086c64;
-    color: white;
-    padding: 1em;
-}
-.services-section {
-  background-color: #daf2ed;
-  padding: 4em 1.5em;
-}
-
-.services-container {
-  max-width: 1100px;
-  margin: auto;
-  text-align: center;
-  background-color: white;
-  padding: 3em;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-}
-
-.section-title {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 2.5em;
-  color: #086c64;
-  border-left: 5px solid #086c64;
-  padding-left: 15px;
-  text-align: left;
-  margin-bottom: 1em;
-}
-
-.intro-text {
-  font-size: 1.1em;
-  margin-bottom: 2.5em;
-  color: #333;
-}
-
-.service-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2em;
-}
-
-.service-item {
-  background: #f7f9f9;
-  padding: 2em;
-  border-radius: 10px;
-  text-align: center;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-}
-
-.service-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
-}
-
-.service-item img {
-  width: 60px;
-  margin-bottom: 1em;
-}
-
-.service-item h3 {
-  font-family: 'Montserrat', sans-serif;
-  color: #086c64;
-  font-size: 1.3em;
-  margin-bottom: 0.5em;
-}
-
-.service-item p {
-  font-size: 1em;
-  color: #555;
-}
-
-.banniere-bas img {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin-top: 2em;
-}
-
-.banner-why {
-  background-image: url("images/historical-buildings-morocco.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 320px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
 }
 
 .banner-overlay {
-  background-color: rgba(8, 108, 100, 0.7);
+  background-color: rgba(8, 108, 100, 0.75);
   color: white;
-  padding: 2em 3em;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 2em;
+  padding: 1.5em 2em;
+  border-radius: 10px;
   text-align: center;
-  border-radius: 8px;
+}
+
+.banner-overlay h2,
+.banner-section h2 {
+  margin: 0;
+  font-size: 2em;
+}
+
+/* =============== CONTENU =============== */
+main {
+  max-width: 1100px;
+  margin: auto;
+  padding: 3em 1em;
 }
 
 .why-content {
@@ -316,10 +108,8 @@ footer {
 }
 
 .why-section {
-  max-width: 1100px;
-  margin: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2em;
 }
 
@@ -328,319 +118,180 @@ footer {
   padding: 1.5em;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.why-block:hover {
+  transform: translateY(-5px);
 }
 
 .why-block h3 {
   color: #086c64;
-  font-family: 'Montserrat', sans-serif;
   margin-bottom: 0.5em;
 }
 
 .why-block p {
-  font-family: 'Open Sans', sans-serif;
   color: #333;
-  font-size: 1em;
+  line-height: 1.6;
 }
 
-body {
-  margin: 0;
-  font-family: 'Open Sans', sans-serif;
-  background-color: #f2fefc;
-}
-
-.site-header {
-  background-color: #086c64;
-  color: white;
-  padding: 1em;
-  text-align: center;
-}
-
-.site-header .logo {
-  max-width: 80px;
-}
-
-nav ul {
-  display: flex;
-  justify-content: center;
-  gap: 1em;
-  list-style: none;
-  padding: 0;
-  margin-top: 1em;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
-
-nav ul li a.active {
-  border-bottom: 2px solid #fff;
-}
-
-.contact-main {
-  background-image: url('images/skyline-5151765.jpg');
-  background-size: cover;
-  background-position: center;
-
-.contact-form {
-  margin-top: 3em;
-  background-color: #ffffff;
+/* =============== SECTIONS (CONTACT, FORM, DIRECTEUR) =============== */
+.contact-grid,
+.directeur-section,
+.contact-form-section {
+  background: #daf2ed;
   padding: 2em;
   border-radius: 15px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  margin-top: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  align-items: center;
 }
 
-.contact-form h3 {
+.contact-info, .contact-map, .directeur-info, .directeur-photo {
+  flex: 1;
+  min-width: 280px;
+}
+
+.contact-info h3,
+.directeur-info h3,
+.contact-form-section h3 {
   font-family: 'Montserrat', sans-serif;
   color: #086c64;
-  margin-bottom: 1em;
-  text-align: center;
 }
 
-.contact-form form {
+.contact-info p,
+.directeur-info p {
+  line-height: 1.6;
+  margin: 0.5em 0;
+  color: #333;
+}
+
+.contact-map iframe {
+  width: 100%;
+  height: 250px;
+  border: none;
+  border-radius: 10px;
+}
+
+.directeur-photo img {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* FORMULAIRE */
+.contact-form-section {
+  background-color: #fff;
+}
+
+.contact-form-section h3 {
+  text-align: center;
+  font-size: 1.6em;
+  margin-bottom: 1.5em;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.form-group {
+  flex: 1;
+  min-width: 250px;
   display: flex;
   flex-direction: column;
-  gap: 1em;
 }
 
-.contact-form label {
+.form-group label {
   font-weight: bold;
   color: #064f48;
+  margin-bottom: 0.5em;
 }
 
-.contact-form input,
-.contact-form textarea {
-  padding: 0.8em;
-  border-radius: 8px;
+.form-group input,
+.form-group textarea {
+  padding: 0.9em;
+  border-radius: 10px;
   border: 1px solid #ccc;
+  font-size: 1em;
   font-family: 'Open Sans', sans-serif;
 }
 
-.contact-form button {
+textarea {
+  resize: vertical;
+}
+
+.form-submit {
+  margin-top: 2em;
+  text-align: center;
+}
+
+.form-submit button {
   background-color: #086c64;
   color: white;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0.9em 2em;
   border: none;
-  padding: 0.8em;
-  border-radius: 8px;
+  border-radius: 10px;
   font-size: 1em;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-.contact-form button:hover {
+.form-submit button:hover {
   background-color: #064f48;
 }
-/* === RESPONSIVE DESIGN === */
-@media (max-width: 768px) {
-  .header-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-  }
 
-  nav ul {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 0;
-  }
-
-  nav ul li a {
-    padding: 8px 0;
-    font-size: 16px;
-  }
-
-  .title-block h1 {
-    font-size: 20px;
-    margin: 10px 0 5px;
-  }
-
-  .title-block p {
-    font-size: 14px;
-  }
-
-  .service-list {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 10px;
-  }
-
-  .service-item {
-    text-align: center;
-  }
-
-  .service-item img {
-    max-width: 60px;
-    height: auto;
-    margin-bottom: 10px;
-  }
-
-  .section-title {
-    font-size: 24px;
-    text-align: center;
-    margin-top: 20px;
-  }
-
-  .intro-text {
-    font-size: 15px;
-    text-align: center;
-    margin: 0 10px 20px;
-  }
-
-  .banniere-bas img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin-top: 30px;
-  }
-
-  footer {
-    text-align: center;
-    font-size: 13px;
-    padding: 15px 10px;
-  }
-
-  .logo {
-    max-width: 80px;
-    height: auto;
-  }
-}
-    <header class="site-header">
-  <div class="header-container">
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 30px;
-}
-@media (max-width: 768px) {
-  .header-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-  }
-
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding: 0;
-    margin: 0;
-  }
-
-  nav ul li {
-    list-style: none;
-  }
-
-  nav ul li a {
-    padding: 10px;
-    display: block;
-    font-size: 16px;
-  }
-
-  .title-block h1 {
-    font-size: 22px;
-    margin: 10px 0 5px;
-    text-align: center;
-  }
-
-  .title-block p {
-    font-size: 14px;
-    text-align: center;
-  }
-
-  .logo {
-    max-width: 80px;
-    height: auto;
-    margin-bottom: 10px;
-  }
-
-  .services-container {
-    padding: 0 15px;
-  }
-
-  .service-list {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 25px;
-  }
-
-  .service-item {
-    text-align: center;
-  }
-
-  .service-item img {
-    max-width: 70px;
-    height: auto;
-    margin-bottom: 10px;
-  }
-
-  .section-title {
-    font-size: 24px;
-    text-align: center;
-    margin-top: 30px;
-  }
-
-  .intro-text {
-    font-size: 15px;
-    text-align: center;
-    margin: 0 10px 20px;
-  }
-
-  .banniere-bas img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin-top: 30px;
-  }
-
-  footer {
-    text-align: center;
-    font-size: 13px;
-    padding: 20px 10px;
-  }
-}
-/* Services section responsive */
-.service-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  padding: 2rem 1rem;
+/* =============== BANNIÈRE BAS =============== */
+.banniere-bas {
+  margin-top: 3em;
 }
 
-.service-item {
-  flex: 1 1 250px;
-  max-width: 300px;
+.banniere-bas img {
+  width: 100%;
+  display: block;
+}
+
+/* =============== FOOTER =============== */
+footer {
+  background-color: #064f48;
+  color: white;
   text-align: center;
-  background-color: white;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  padding: 1.5rem;
+  padding: 1.5em 1em;
+  font-size: 0.95em;
 }
 
-.service-item img {
-  width: 60px;
-  height: 60px;
-  margin-bottom: 1rem;
-}
-
-@media (max-width: 768px) {
-  .title-block h1 {
-    font-size: 1.5rem;
+/* =============== RESPONSIVE =============== */
+@media (max-width: 700px) {
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
-  .title-block p {
-    font-size: 1rem;
+  .form-row,
+  .contact-grid,
+  .directeur-section {
+    flex-direction: column;
   }
 
   nav ul {
     flex-direction: column;
     align-items: center;
   }
+
+  .banner-section h2,
+  .banner-overlay h2 {
+    font-size: 1.5em;
+  }
+
+  .directeur-info {
+    text-align: center;
+  }
+}
 }
 
